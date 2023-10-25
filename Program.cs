@@ -4,7 +4,11 @@ bool vf2 = true;
 bool vencedor = true;
 Service service = new Service();
 Random aleatorio = new Random();
-
+Console.Write("1 player\n2 player\nopcao: ");
+int players = Convert.ToInt32(Console.ReadLine());
+switch (players)
+{
+    case 1:
         Console.Write("digiete seu nome: ");
         string jogador1 = Console.ReadLine();
         Console.Clear();
@@ -72,4 +76,18 @@ Random aleatorio = new Random();
 
         }
 
-        
+        break;
+
+
+    case 2:
+
+
+
+
+
+
+        break;
+    default:
+
+        break;
+}

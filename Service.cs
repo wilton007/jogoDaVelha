@@ -33,7 +33,7 @@ namespace jogoDaVelha
                     if (jogo[i, j] == n1)
                     {
                         vf = true;
-                        i=3;
+                        i = 3;
                         break;
                     }
                     else
@@ -42,7 +42,7 @@ namespace jogoDaVelha
                     }
 
                 }
-               
+
             }
             return vf;
         }
@@ -61,52 +61,32 @@ namespace jogoDaVelha
                         if (jogo[i, j] == n1)
                         {
                             jogo[i, j] = jogador;
-                            i =3;
+                            i = 3;
                             break;
                         }
                     }
                 }
                 return true;
-                
+
             }
             else
             {
                 return false;
-                
+
             }
         }
 
         public bool venc(string jogador)
         {
-            if (jogo[0, 0] == jogador && jogo[0, 1] == jogador && jogo[0, 2] == jogador)
-            {
-                return true;
-            }
-            else if (jogo[1, 0] == jogador && jogo[1, 1] == jogador && jogo[1, 2] == jogador)
-            {
-                return true;
-            }
-            else if (jogo[2, 0] == jogador && jogo[2, 1] == jogador && jogo[2, 2] == jogador)
-            {
-                return true;
-            }
-            else if (jogo[0, 0] == jogador && jogo[1, 0] == jogador && jogo[2, 0] == jogador)
-            {
-                return true;
-            }
-            else if (jogo[0, 1] == jogador && jogo[1, 1] == jogador && jogo[2, 1] == jogador)
-            {
-                return true;
-            }
-            else if (jogo[0, 2] == jogador && jogo[1, 2] == jogador && jogo[2, 2] == jogador)
-            {
-                return true;
-            }
-            else if (jogo[0, 0] == jogador && jogo[1, 1] == jogador && jogo[2, 2] == jogador)
-            {
-                return true;
-            }
-            else if (jogo[0, 2] == jogador && jogo[1, 1] == jogador && jogo[2, 0] == jogador)
+            if (jogo[0, 0] == jogador && jogo[0, 1] == jogador && jogo[0, 2] == jogador &&
+                jogo[2, 0] == jogador && jogo[2, 1] == jogador && jogo[2, 2] == jogador &&
+                jogo[0, 0] == jogador && jogo[1, 0] == jogador && jogo[2, 0] == jogador &&
+                jogo[0, 1] == jogador && jogo[1, 1] == jogador && jogo[2, 1] == jogador &&
+                jogo[0, 1] == jogador && jogo[1, 1] == jogador && jogo[2, 1] == jogador &&
+                jogo[0, 2] == jogador && jogo[1, 2] == jogador && jogo[2, 2] == jogador &&
+                jogo[0, 0] == jogador && jogo[1, 1] == jogador && jogo[2, 2] == jogador &&
+                jogo[0, 2] == jogador && jogo[1, 1] == jogador && jogo[2, 0] == jogador &&
+                jogo[1, 0] == jogador && jogo[1, 1] == jogador && jogo[1, 2] == jogador)
             {
                 return true;
             }
